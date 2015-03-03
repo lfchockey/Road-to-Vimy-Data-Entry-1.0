@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F12F83BF1A6AB8D200FCB891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12F83BD1A6AB8D200FCB891 /* Main.storyboard */; };
+		F1B339971A68947000CC34F7 /* ViewControllerAttestation1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B339961A68947000CC34F7 /* ViewControllerAttestation1.swift */; };
 		F1EA578D1A5369B600E0EFF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA578C1A5369B600E0EFF2 /* AppDelegate.swift */; };
 		F1EA578F1A5369B600E0EFF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA578E1A5369B600E0EFF2 /* ViewController.swift */; };
-		F1EA57921A5369B600E0EFF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1EA57901A5369B600E0EFF2 /* Main.storyboard */; };
 		F1EA57941A5369B600E0EFF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1EA57931A5369B600E0EFF2 /* Images.xcassets */; };
 		F1EA57971A5369B600E0EFF2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1EA57951A5369B600E0EFF2 /* LaunchScreen.xib */; };
 		F1EA57A31A5369B600E0EFF2 /* VimySoldierEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA57A21A5369B600E0EFF2 /* VimySoldierEntryTests.swift */; };
+		F1EA57AD1A64871E00E0EFF2 /* FullSoldier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA57AC1A64871E00E0EFF2 /* FullSoldier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +28,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F12F83BE1A6AB8D200FCB891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1B339961A68947000CC34F7 /* ViewControllerAttestation1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAttestation1.swift; sourceTree = "<group>"; };
 		F1EA57871A5369B600E0EFF2 /* VimySoldierEntry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VimySoldierEntry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1EA578B1A5369B600E0EFF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1EA578C1A5369B600E0EFF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1EA578E1A5369B600E0EFF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F1EA57911A5369B600E0EFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1EA57931A5369B600E0EFF2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F1EA57961A5369B600E0EFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F1EA579C1A5369B600E0EFF2 /* VimySoldierEntryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimySoldierEntryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1EA57A11A5369B600E0EFF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1EA57A21A5369B600E0EFF2 /* VimySoldierEntryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimySoldierEntryTests.swift; sourceTree = "<group>"; };
+		F1EA57AC1A64871E00E0EFF2 /* FullSoldier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullSoldier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,9 @@
 			children = (
 				F1EA578C1A5369B600E0EFF2 /* AppDelegate.swift */,
 				F1EA578E1A5369B600E0EFF2 /* ViewController.swift */,
-				F1EA57901A5369B600E0EFF2 /* Main.storyboard */,
+				F1B339961A68947000CC34F7 /* ViewControllerAttestation1.swift */,
+				F1EA57AC1A64871E00E0EFF2 /* FullSoldier.swift */,
+				F12F83BD1A6AB8D200FCB891 /* Main.storyboard */,
 				F1EA57931A5369B600E0EFF2 /* Images.xcassets */,
 				F1EA57951A5369B600E0EFF2 /* LaunchScreen.xib */,
 				F1EA578A1A5369B600E0EFF2 /* Supporting Files */,
@@ -192,7 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1EA57921A5369B600E0EFF2 /* Main.storyboard in Resources */,
+				F12F83BF1A6AB8D200FCB891 /* Main.storyboard in Resources */,
 				F1EA57971A5369B600E0EFF2 /* LaunchScreen.xib in Resources */,
 				F1EA57941A5369B600E0EFF2 /* Images.xcassets in Resources */,
 			);
@@ -213,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1EA578F1A5369B600E0EFF2 /* ViewController.swift in Sources */,
+				F1EA57AD1A64871E00E0EFF2 /* FullSoldier.swift in Sources */,
+				F1B339971A68947000CC34F7 /* ViewControllerAttestation1.swift in Sources */,
 				F1EA578D1A5369B600E0EFF2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,10 +244,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F1EA57901A5369B600E0EFF2 /* Main.storyboard */ = {
+		F12F83BD1A6AB8D200FCB891 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F1EA57911A5369B600E0EFF2 /* Base */,
+				F12F83BE1A6AB8D200FCB891 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -407,6 +415,7 @@
 				F1EA57A81A5369B600E0EFF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1EA57A91A5369B600E0EFF2 /* Build configuration list for PBXNativeTarget "VimySoldierEntryTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +424,7 @@
 				F1EA57AB1A5369B600E0EFF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
