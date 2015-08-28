@@ -85,6 +85,7 @@ class FullSoldier: NSObject{
     var date_of_death: String
     var date_of_discharge: String
     var date_of_enlistment_conscription: String
+    var died_at: String
     var engagement_understanding: String
     var interned: String
     var kia: String
@@ -191,6 +192,7 @@ class FullSoldier: NSObject{
         self.date_of_death = ""
         self.date_of_discharge = ""
         self.date_of_enlistment_conscription = ""
+        self.died_at = ""
         self.engagement_understanding = ""
         self.interned = ""
         self.kia = ""
@@ -295,6 +297,7 @@ class FullSoldier: NSObject{
         date_of_death: String,
         date_of_discharge: String,
         date_of_enlistment_conscription: String,
+        died_at: String,
         engagement_understanding: String,
         interned: String,
         kia: String,
@@ -396,6 +399,7 @@ class FullSoldier: NSObject{
             self.date_of_death = date_of_death
             self.date_of_discharge = date_of_discharge
             self.date_of_enlistment_conscription = date_of_enlistment_conscription
+            self.died_at = died_at
             self.engagement_understanding = engagement_understanding
             self.interned = interned
             self.kia = kia
@@ -503,6 +507,7 @@ class FullSoldier: NSObject{
             "date_of_death": self.date_of_death,
             "date_of_discharge": self.date_of_discharge,
             "date_of_enlistment_conscription": self.date_of_enlistment_conscription,
+            "died_at": self.died_at,
             "engagement_understanding": self.engagement_understanding,
             "interned": self.interned,
             "kia": self.kia,
@@ -760,6 +765,9 @@ class FullSoldier: NSObject{
         }
         if let latestValue = soldierDict.objectForKey("date_of_enlistment_conscription") as? String {
             fullSol.date_of_enlistment_conscription = latestValue
+        }
+        if let latestValue = soldierDict.objectForKey("died_at") as? String {
+            fullSol.died_at = latestValue
         }
         if let latestValue = soldierDict.objectForKey("engagement_understanding") as? String {
             fullSol.engagement_understanding = latestValue

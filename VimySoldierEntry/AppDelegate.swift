@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +17,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        // **Solid Color** //
+        
+        UINavigationBar.appearance().barTintColor = UIColor.darkGrayColor()
+        //UINavigationBar.appearance().titleTextAttributes = UIFont.fontNamesForFamilyName("HelveticaNeue-CondensedBlack")
+        UIStatusBarStyle.LightContent
+        
+        
+        
+        // **Color from RGB** //
+        
+        //UINavigationBar.appearance().barTintColor
+        
+        // **Background Image Color** //
+        
+        //UINavigationBar.appearance().
+        //UINavigationBar.appearance().barTintColor = UIColor(red: 237.0/255.0, green: 201.0/255.0, blue: 175.0/255.0, alpha: 1.0)
+        //UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        
         return true
     }
 

@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3401D01B2874CB00B1C499 /* ViewControllerAttestation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3401CF1B2874CB00B1C499 /* ViewControllerAttestation2.swift */; };
+		3F87C9A01B02394900AF44AE /* ViewControllerMedical2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87C99F1B02394900AF44AE /* ViewControllerMedical2.swift */; };
+		3FD3AEDA1B27386C004B8F8E /* BurialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3AED91B27386C004B8F8E /* BurialViewController.swift */; };
+		3FD3AEDC1B273891004B8F8E /* ViewControllerRegimental2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3AEDB1B273891004B8F8E /* ViewControllerRegimental2.swift */; };
+		3FD3AEDE1B273904004B8F8E /* ViewControllerMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3AEDD1B273904004B8F8E /* ViewControllerMainMenu.swift */; };
+		3FD3AEE21B273B95004B8F8E /* ViewControllerMedical1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3AEE11B273B95004B8F8E /* ViewControllerMedical1.swift */; };
 		F12F83BF1A6AB8D200FCB891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12F83BD1A6AB8D200FCB891 /* Main.storyboard */; };
+		F137063E1B865A9D00626476 /* ViewControllerFinalSubmit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137063D1B865A9D00626476 /* ViewControllerFinalSubmit.swift */; };
 		F1B339971A68947000CC34F7 /* ViewControllerAttestation1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B339961A68947000CC34F7 /* ViewControllerAttestation1.swift */; };
+		F1C212A51B25132000DBD118 /* ViewControllerAttestation3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C212A41B25132000DBD118 /* ViewControllerAttestation3.swift */; };
+		F1CD31C01B24B9D900A4654E /* ViewControllerRegimental1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD31BF1B24B9D900A4654E /* ViewControllerRegimental1.swift */; };
 		F1EA578D1A5369B600E0EFF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA578C1A5369B600E0EFF2 /* AppDelegate.swift */; };
 		F1EA578F1A5369B600E0EFF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA578E1A5369B600E0EFF2 /* ViewController.swift */; };
 		F1EA57941A5369B600E0EFF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1EA57931A5369B600E0EFF2 /* Images.xcassets */; };
@@ -28,8 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F3401CF1B2874CB00B1C499 /* ViewControllerAttestation2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAttestation2.swift; sourceTree = "<group>"; };
+		3F87C99F1B02394900AF44AE /* ViewControllerMedical2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMedical2.swift; sourceTree = "<group>"; };
+		3FD3AED91B27386C004B8F8E /* BurialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurialViewController.swift; sourceTree = "<group>"; };
+		3FD3AEDB1B273891004B8F8E /* ViewControllerRegimental2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerRegimental2.swift; sourceTree = "<group>"; };
+		3FD3AEDD1B273904004B8F8E /* ViewControllerMainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMainMenu.swift; sourceTree = "<group>"; };
+		3FD3AEE11B273B95004B8F8E /* ViewControllerMedical1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMedical1.swift; sourceTree = "<group>"; };
 		F12F83BE1A6AB8D200FCB891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F137063D1B865A9D00626476 /* ViewControllerFinalSubmit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFinalSubmit.swift; sourceTree = "<group>"; };
 		F1B339961A68947000CC34F7 /* ViewControllerAttestation1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAttestation1.swift; sourceTree = "<group>"; };
+		F1C212A41B25132000DBD118 /* ViewControllerAttestation3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAttestation3.swift; sourceTree = "<group>"; };
+		F1CD31BF1B24B9D900A4654E /* ViewControllerRegimental1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerRegimental1.swift; sourceTree = "<group>"; };
 		F1EA57871A5369B600E0EFF2 /* VimySoldierEntry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VimySoldierEntry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1EA578B1A5369B600E0EFF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1EA578C1A5369B600E0EFF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,12 +100,21 @@
 			isa = PBXGroup;
 			children = (
 				F1EA578C1A5369B600E0EFF2 /* AppDelegate.swift */,
-				F1EA578E1A5369B600E0EFF2 /* ViewController.swift */,
-				F1B339961A68947000CC34F7 /* ViewControllerAttestation1.swift */,
-				F1EA57AC1A64871E00E0EFF2 /* FullSoldier.swift */,
 				F12F83BD1A6AB8D200FCB891 /* Main.storyboard */,
+				F1EA57AC1A64871E00E0EFF2 /* FullSoldier.swift */,
 				F1EA57931A5369B600E0EFF2 /* Images.xcassets */,
 				F1EA57951A5369B600E0EFF2 /* LaunchScreen.xib */,
+				3FD3AEDD1B273904004B8F8E /* ViewControllerMainMenu.swift */,
+				F1EA578E1A5369B600E0EFF2 /* ViewController.swift */,
+				F1B339961A68947000CC34F7 /* ViewControllerAttestation1.swift */,
+				3F3401CF1B2874CB00B1C499 /* ViewControllerAttestation2.swift */,
+				F1C212A41B25132000DBD118 /* ViewControllerAttestation3.swift */,
+				3FD3AEE11B273B95004B8F8E /* ViewControllerMedical1.swift */,
+				3F87C99F1B02394900AF44AE /* ViewControllerMedical2.swift */,
+				F1CD31BF1B24B9D900A4654E /* ViewControllerRegimental1.swift */,
+				3FD3AEDB1B273891004B8F8E /* ViewControllerRegimental2.swift */,
+				3FD3AED91B27386C004B8F8E /* BurialViewController.swift */,
+				F137063D1B865A9D00626476 /* ViewControllerFinalSubmit.swift */,
 				F1EA578A1A5369B600E0EFF2 /* Supporting Files */,
 			);
 			path = VimySoldierEntry;
@@ -167,6 +194,7 @@
 				TargetAttributes = {
 					F1EA57861A5369B600E0EFF2 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 6M6MD3ZAQR;
 					};
 					F1EA579B1A5369B600E0EFF2 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -219,9 +247,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1EA578F1A5369B600E0EFF2 /* ViewController.swift in Sources */,
+				F1C212A51B25132000DBD118 /* ViewControllerAttestation3.swift in Sources */,
+				3FD3AEE21B273B95004B8F8E /* ViewControllerMedical1.swift in Sources */,
+				3FD3AEDE1B273904004B8F8E /* ViewControllerMainMenu.swift in Sources */,
+				3F3401D01B2874CB00B1C499 /* ViewControllerAttestation2.swift in Sources */,
+				3FD3AEDA1B27386C004B8F8E /* BurialViewController.swift in Sources */,
 				F1EA57AD1A64871E00E0EFF2 /* FullSoldier.swift in Sources */,
+				F1CD31C01B24B9D900A4654E /* ViewControllerRegimental1.swift in Sources */,
 				F1B339971A68947000CC34F7 /* ViewControllerAttestation1.swift in Sources */,
+				F137063E1B865A9D00626476 /* ViewControllerFinalSubmit.swift in Sources */,
 				F1EA578D1A5369B600E0EFF2 /* AppDelegate.swift in Sources */,
+				3F87C9A01B02394900AF44AE /* ViewControllerMedical2.swift in Sources */,
+				3FD3AEDC1B273891004B8F8E /* ViewControllerRegimental2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -334,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -346,9 +383,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VimySoldierEntry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"MTL_ENABLE_DEBUG_INFO[arch=*]" = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -356,9 +397,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VimySoldierEntry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

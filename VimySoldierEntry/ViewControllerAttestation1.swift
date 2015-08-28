@@ -23,11 +23,32 @@ class ViewControllerAttestation1: UIViewController {
     @IBOutlet weak var txtNOKName: UITextField!
     @IBOutlet weak var txtNOKAddress: UITextField!
     @IBOutlet weak var txtNOKRelationship: UITextField!
-    @IBOutlet weak var btnSubmit: UIButton!
+    
+    @IBOutlet weak var dateBirth: UIDatePicker!
+    
+    //@IBOutlet weak var txtDateOfBirth: UILabel!
+    
+    @IBAction func birthDatePicker(sender: AnyObject) {
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        var strDate = dateFormatter.stringFromDate(dateBirth.date)
+        MyVariables.globalSoldier.date_of_birth = strDate
+        //txtDateOfBirth.text = strDate
+        //println(MyVariables.globalSoldier.date_of_birth)
+    }
+    
+    
+    
+    
+    //@IBOutlet weak var btnSubmit: UIButton!
+    @IBOutlet weak var btn2Submit: UIButton!
     
 // *** Help File Descriptor 9
+    
+    
+    
     @IBAction func btn_Click(sender: AnyObject) {
-        
+        //println(MyVariables.globalSoldier.date_of_birth)
         var totalPost: String = ""
         
         //get the Access_Code and soldier_id from the last form
@@ -100,6 +121,12 @@ class ViewControllerAttestation1: UIViewController {
             totalPost += "&relationship_to_next_of_kin=" + MyVariables.globalSoldier.relationship_to_next_of_kin
         }
         
+        if MyVariables.globalSoldier.date_of_birth != "" {
+            totalPost += "&date_of_birth=" + MyVariables.globalSoldier.date_of_birth
+        }
+        
+        
+        
         totalPost += "&table=Attestation1_Temp_WW1"
         
         //println(totalPost)
@@ -107,7 +134,7 @@ class ViewControllerAttestation1: UIViewController {
         // create the request & response
         
         //var request = NSMutableURLRequest(URL: NSURL(string: "http://requestb.in/yanvmlya")!, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData, timeoutInterval: 5)
-        var request = NSMutableURLRequest(URL: NSURL(string: "http://www.lest-we-forget.ca/dataentry/ww1_mobile_edit_soldier.php")!, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData, timeoutInterval: 5)
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://www.lest-we-forget.ca/apis/ww1_mobile_edit_soldier_api.php")!, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData, timeoutInterval: 5)
         var response: NSURLResponse?
         var error: NSError?
         var jsonStr = MyVariables.globalSoldier.makeJSON()
@@ -139,37 +166,58 @@ class ViewControllerAttestation1: UIViewController {
         {
             (response, data, error) in
             //println(response)
-            println(data.description)
+            //println(data.description)
             
             // look at the response
             if let httpResponse = response as? NSHTTPURLResponse {
-                println("HTTP response: \(httpResponse.description)")
+                //println("HTTP response: \(httpResponse.description)")
             } else {
-                println("No HTTP response")
+                //println("No HTTP response")
             }
             
         }
         
-        
-        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue(), completionHandler:{ (response:NSURLResponse!, data: NSData!, error: NSError!) -> Void in
-                // look at the response
-                if let httpResponse = response as? NSHTTPURLResponse {
-                    println("HTTP response: \(httpResponse.description)")
-                } else {
-                    println("No HTTP response")
-                }
-        })
+//        
+//        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue(), completionHandler:{ (response:NSURLResponse!, data: NSData!, error: NSError!) -> Void in
+//                // look at the response
+//                if let httpResponse = response as? NSHTTPURLResponse {
+//                    //println("HTTP response: \(httpResponse.description)")
+//                } else {
+//                    println("No HTTP response")
+//                }
+//        })
+        dispatch_async(dispatch_get_main_queue()) {
+            self.performSegueWithIdentifier("Att2Segue", sender: self)
+        }
     }
     
 
     
-// *** Help File Descriptor 8 
+// *** Help File Descriptor 8
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //var testDate = "1884-02-19"
+        
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        if let dateOfBirth = dateFormatter.dateFromString(MyVariables.globalSoldier.date_of_birth) {
+
+            dateBirth.date = dateOfBirth
+        }
+        else {
+            //let newDate = dateFormatter.dateFromString("1888-08-08")
+            //dateBirth.date = newDate!
+        }
+        
+        
+        
+        //self.view.backgroundColor = UIColor(red: 194.0/255.0, green: 178.0/255.0, blue: 128.0/255.0, alpha: 1.0)
+        
         // Place all of the soldier's fields inside the appropriate UITextFields
         //lblDisplayName.text = MyVariables.globalSoldier.surname
-        println(MyVariables.globalSoldier.surname)
+        //println(MyVariables.globalSoldier.surname)
         txtSurname.text = MyVariables.globalSoldier.surname
         txtChristianNames.text = MyVariables.globalSoldier.christian_names
         txtStreet.text = MyVariables.globalSoldier.present_address_street
